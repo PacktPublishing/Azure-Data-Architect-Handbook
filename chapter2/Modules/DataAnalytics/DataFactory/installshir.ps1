@@ -50,8 +50,6 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Break
 }
 
-$path="https://download.microsoft.com/download/E/4/7/E4771905-1079-445B-8BF9-8A1A075D8A10/IntegrationRuntime_5.8.7856.3.msi"
-$authKey="IR@b9fbe003-2127-4f57-8b58-4043a0211156@srramadf@ServiceEndpoint=srramadf.eastus2.datafactory.azure.net@YsmBkHRWE0P6dlh7mLPVFoMF5+eTUsSfqJ/rNFeNzqY="
 InputVal $path $authKey
 InstallGw $path
 RegisterGw $authKey 
